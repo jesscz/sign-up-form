@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,300;1,400&family=Rubik+Puddles&display=swap');
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url('apples.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: max(50vw,625px);
+    background-color: white;
+    display: flex;
+}
+#banner{
+    display: flex;
+    width: max(40vw,625px);
+    height: 40%;
+    position: absolute;
+
+    align-items: center; /* vertically center */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-family: 'Rubik Puddles', cursive;
+}
+#icon{
+    padding: 0px 50px;
+    height: 100px;
+    width: 90px;
+}
+#title{
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 50px;
+    display: flex;
+    padding-left: 25px;
+}
+#right-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    max-width: max(60%,600px);
+    right: 10px;
+}
+.intro-text{
+    display: flex;
+    margin-top: -10px;
+    max-width: 400px;
+    background-color: white;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+#final-intro{
+    margin-top: 10px;
+}
+#form-container{
+    display: flex;
+    margin-top: 15px;
+    overflow: auto;
+    width: clamp(300px,45vw,700px);
+    height: min(50vh, 500px);
+    border-radius: 2%;
+    background-color: #f46948;
+    flex-wrap: wrap;
+    max-width: 90%;
+    padding: 10px;
+    flex-basis: auto;
+}
+
+.user-data{
+    display: flex;
+    flex-basis: 50%;
+    min-width: 210px;
+    max-width: 230px;
+    max-height: 50px;
+    margin: 15px;
+    flex-direction: column;
+}
+#form-container > div > label{   
+    display: flex;
+    margin-bottom: 5px;
+}
+#form-container > div > label + *{
+    display: flex;
+} 
+#submit-button{
+    display: flex;
+    position: relative;
+    bottom: min(1vh, 0px);
+    margin: 10px;
+}
+#submit-button-itself{
+    font-family: 'Raleway', sans-serif;
+}
+#bottom-text{
+    padding-left: 10px;
+    margin-top: 5px;
+}
+#log-in{ /*login button*/
+    background-color: white; /* Green */
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #f46948;
+}
+#log-in:hover{
+    text-decoration: underline;
+}
+#credit{
+    position: absolute;
+    z-index: -1;
+    bottom: max(1vh, 0px);
+    left: max(1vh, 0px);
+    width: 300px;
+    font-weight: 100;
+    font-size: smaller;
+}
